@@ -4,8 +4,8 @@ import img from '../../../assets/auth/image.png'
 const AuthLayout = () => {
   return (
     <div>
-dsds
-{/* <Outlet /> */}
+dsdssdfgsfg
+<Outlet />
 
 <div>
     <img src={img} alt="" />

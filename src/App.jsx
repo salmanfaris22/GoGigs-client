@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-     <div className='bg-[var(--color-background)]  '>
+     <div className='bg-[var(--color-background)]'>
       khjkjh
      </div>
     </>

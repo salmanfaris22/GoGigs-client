@@ -16,6 +16,9 @@
   --color-primary: #000;
   --color-background: #d00000;
   --color-text: theme(colors.gray.900);
+  --color-black: #000;
+  --color-white: #000;
+
 }
 
 .dark {

@@ -10,7 +10,7 @@ const AuthLogin = () => {
         <div className="w-[55vw] h-[700px] flex justify-center items-center p-4 relative">
          {/* left side */}
           <div className="w-1/2 h-[500px] flex flex-col justify-center 
-            shadow-[-10px_0px_15px_-5px_rgba(0,0,0,0.1)] 
+            shadow-[10px_-10px_15px_-10px_rgba(0,0,0,0.1)] 
             gap-y-5 rounded-l-xl p-5  bg-white">
             <h1 className="text-2xl font-bold">Gogis</h1>
             <div>
@@ -47,9 +47,9 @@ const AuthLogin = () => {
             shadow-[10px_10px_15px_-5px_rgba(0,0,0,0.1)] 
             rounded-xl ">
             <div 
-              className="w-full h-full rounded-xl  flex items-center justify-center text-gray-500 object-cover"
+              className=" w-full h-full rounded-xl  flex items-center justify-center text-gray-500 object-cover"
             >
-            <img className="w-full h-full object-cover" src={img} alt="" />
+            <img className="      shadow-[10px_-15px_15px_-10px_rgba(0,0,0,0.1)]  w-full h-full object-cover" src={img} alt="" />
             </div>
           </div>
         </div>

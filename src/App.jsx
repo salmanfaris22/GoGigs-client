@@ -1,14 +1,17 @@
 
 import './App.css'
 
+import UserRout from './rout'
+
 function App() {
   
-
   return (
     <>
-     <div className='bg-[var(--color-background)]'>
-      khjkjh
-     </div>
+
+     
+    <UserRout/>
+    
+
     </>
   )
 }

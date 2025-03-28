@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@layer components {
+/* @layer components {
   .typography {
     color: var(--color-gray-950);
     a {
@@ -10,14 +10,19 @@
       }
     }
   }
-}
+} */
 
 :root {
-  --color-primary: #000;
-  --color-background: #d00000;
-  --color-text: theme(colors.gray.900);
+  --color-primary: #0062ff;
+  --color-primary-hover: #0000ff;
+  --color-secondry: #0000ff;
+  /* --color-text: theme(colors.gray.900); */
   --color-black: #000;
-  --color-white: #000;
+  --color-white: #ffffff;
+
+
+  --color--primary-text: #0062ff;
+  --color-primary-hover-text: #0000ff;
 
 }
 

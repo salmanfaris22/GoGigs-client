@@ -20,9 +20,17 @@ const AuthLogin = () => {
   return (
     <div className="flex w-full h-screen justify-center items-center px-4">
       <div className="w-full md:w-1/2 flex flex-col ">
-        <h1 className="text-3xl font-bold text-[var(--color-primary)] text-center">GoGigs</h1>
-        <p className="text-[var(--color--primary-text)] text-center mt-2">We missed you!</p>
-        <p className="text-[var(--color--primary-text)] text-center mb-6">Login to your account</p>
+      <h1 className="text-5xl font-extrabold text-[var(--color-primary)] text-center drop-shadow-md">
+  
+  GoGigs
+</h1>
+    <div className="w-24 h-1 bg-[var(--color-primary)] mx-auto mt-2 rounded-full"></div>
+<p className="text-lg font-medium text-[var(--color--primary-text)] text-center mt-3">
+  We missed you!
+</p>
+<p className="text-base text-[var(--color--primary-text)] text-center mb-6 opacity-80">
+  Login to your account
+</p>
 
         {/* {error && <p className="text-red-500 text-sm text-center">{error}</p>} */}
 

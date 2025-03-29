@@ -1,38 +1,29 @@
-import React  from "react";
+import React from "react";
 // import axios from "axios";
 import InputField from "../../../../common/Components/input/Input";
 import Button from "../../../../common/Components/button/Button";
 import CheckboxField from "../../../../common/Components/input/Checkbox";
 import useAuthLogin from "../../../../hooks/AuthHook/LoginHook";
+import SectionHeader from "../common/SectionHeader";
 
 
 const AuthLogin = () => {
-  const { 
-    fields, 
-    handleInputChange, 
-    isChecked, 
-    handleCheckboxChange, 
-    handleSubmit, 
-    isLoading, 
+  const {
+    fields,
+    handleInputChange,
+    isChecked,
+    handleCheckboxChange,
+    handleSubmit,
+    isLoading,
     // error 
   } = useAuthLogin();
 
   return (
     <div className="flex w-full h-screen justify-center items-center px-4">
       <div className="w-full md:w-1/2 flex flex-col ">
-      <h1 className="text-5xl font-extrabold text-[var(--color-primary)] text-center drop-shadow-md">
-  
-  GoGigs
-</h1>
-    <div className="w-24 h-1 bg-[var(--color-primary)] mx-auto mt-2 rounded-full"></div>
-<p className="text-lg font-medium text-[var(--color--primary-text)] text-center mt-3">
-  We missed you!
-</p>
-<p className="text-base text-[var(--color--primary-text)] text-center mb-6 opacity-80">
-  Login to your account
-</p>
-
-        {/* {error && <p className="text-red-500 text-sm text-center">{error}</p>} */}
+      <SectionHeader title={"GoGigs"} subtitle={" We missed you!"} description={"Login to your account"} />
+      
+      {/* {error && <p className="text-red-500 text-sm text-center">{error}</p>} */}
 
         <form onSubmit={handleSubmit}>
           {/* Dynamic Input Fields */}
@@ -55,11 +46,11 @@ const AuthLogin = () => {
           </div>
 
           {/* Submit Button */}
-          <Button 
-            label={isLoading ? "Loading..." : "Submit"} 
-            variant="primary" 
-            className="mt-4 w-full" 
-            disabled={isLoading} 
+          <Button
+            label={isLoading ? "Loading..." : "Submit"}
+            variant="primary"
+            className="mt-4 w-full"
+            disabled={isLoading}
             type="submit"
           />
         </form>

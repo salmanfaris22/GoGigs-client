@@ -11,7 +11,8 @@ const useAuthLogin = () => {
   // State for form fields
   const [fields, setFields] = useState([
     { name: "email", label: "Email", type: "email", value: "" },
-    { name: "password", label: "Password", type: "password", value: "" }
+    { name: "password", label: "Password", type: "password", value: "" },
+    // { name: "password", label: "Password", type: "password", value: "" }
   ]);
   // Checkbox state
   const [isChecked, setIsChecked] = useState(false);

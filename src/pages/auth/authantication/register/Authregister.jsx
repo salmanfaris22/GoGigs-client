@@ -18,7 +18,7 @@ const AuthRegister = () => {
     isLoading,
   } = useAuthRegister();
   const navigateToLogin = () => {
-    navigate("/auth/login/"); // Navigate to SignUp page
+    navigate("/auth/login"); // Navigate to SignUp page
   };
   return (
     <div className="flex w-full h-screen justify-center items-center px-4">

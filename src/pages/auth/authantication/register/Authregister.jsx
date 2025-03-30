@@ -8,7 +8,7 @@ import useAuthRegister from "../../../../hooks/AuthHook/registerHook";
 import { useNavigate } from "react-router-dom";
 
 const AuthRegister = () => {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const {
     fields,
     handleInputChange,
@@ -17,16 +17,18 @@ const AuthRegister = () => {
     handleSubmit,
     isLoading,
   } = useAuthRegister();
+
   const navigateToLogin = () => {
-    navigate("/auth/login"); // Navigate to SignUp page
+    navigate("/auth/login"); // Navigate to Login page
   };
+
   return (
     <div className="flex w-full h-screen justify-center items-center px-4">
       <div className="w-full md:w-1/2 flex flex-col">
         <SectionHeader
-          title={"GoGigs"}
-          subtitle={"Join us today!"}
-          description={"Create a new account"}
+          title="GoGigs"
+          subtitle="Join us today!"
+          description="Create a new account"
         />
         <form onSubmit={handleSubmit}>
           {/* Dynamic Input Fields */}
@@ -41,7 +43,8 @@ const AuthRegister = () => {
               className="mb-4"
             />
           ))}
-          {/* Terms & Conditions */}
+
+          {/* Terms & Conditions Checkbox */}
           <div className="flex items-center mb-4 text-sm">
             <CheckboxField
               label="I agree to the terms and conditions"
@@ -50,6 +53,7 @@ const AuthRegister = () => {
               onChange={handleCheckboxChange}
             />
           </div>
+
           {/* Submit Button */}
           <Button
             label={isLoading ? "Registering..." : "Sign Up"}
@@ -59,13 +63,16 @@ const AuthRegister = () => {
             type="submit"
           />
         </form>
-        <p className="text-[var(--color--primary-text)] mt-4 text-center"
-        onClick={()=>navigateToLogin()}
+
+        {/* Navigate to Login */}
+        <p
+          className="text-[var(--color--primary-text)] mt-4 text-center"
+          onClick={navigateToLogin}
         >
           Already have an account?{" "}
-          <a href="#" className="text-[var(--color-primary)] font-semibold hover:underline">
+          <span className="text-[var(--color-primary)] font-semibold hover:underline">
             Log in
-          </a>
+          </span>
         </p>
       </div>
     </div>

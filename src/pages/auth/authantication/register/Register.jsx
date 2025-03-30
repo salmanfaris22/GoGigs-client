@@ -7,7 +7,7 @@ import SectionHeader from "../common/SectionHeader";
 import useAuthRegister from "../../../../hooks/AuthHook/registerHook";
 import { useNavigate } from "react-router-dom";
 
-const AuthRegister = () => {
+const Register = () => {
   const navigate = useNavigate();
   const {
     fields,
@@ -79,4 +79,4 @@ const AuthRegister = () => {
   );
 };
 
-export default AuthRegister;
+export default Register;

@@ -7,7 +7,8 @@ import AuthLogin from "./pages/auth/authantication/login/AuthLogin";
 import VerifyOTP from "./pages/auth/authantication/verifyOTP/verifyOTP";
 import AuthForgotPassword from "./pages/auth/authantication/forgot/ForgotPassword";
 import NewPassword from "./pages/auth/authantication/newPassword/NewPassword";
-import AuthRegister from "./pages/auth/authantication/register/Register";
+// import AuthRegister from "./pages/auth/authantication/register/Register";
+import Register from "./pages/auth/authantication/register/Register";
 
 // import Hero from "./pages/NonAuth/Landing/Hero/Hero.Jsx";
 
@@ -20,7 +21,7 @@ const UserRout = () => {
 {/* <Route path="/" element={<Hero/> }/> */}
         <Route path="/auth" element={<AuthLayout />}>
           <Route path="login" element={<AuthLogin />} />
-          <Route path="register" element={<AuthRegister />} />
+          <Route path="register" element={<Register />} />
           <Route path="verify-otp/:meth/:email" element={<VerifyOTP />} />
           <Route path="forgot/:meth" element={<AuthForgotPassword />} />
           <Route path="new-password" element={<NewPassword />} />

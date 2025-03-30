@@ -22,9 +22,6 @@ const AuthLogin = () => {
     <div className="flex w-full h-screen justify-center items-center px-4">
       <div className="w-full md:w-1/2 flex flex-col ">
       <SectionHeader title={"GoGigs"} subtitle={" We missed you!"} description={"Login to your account"} />
-      
-      {/* {error && <p className="text-red-500 text-sm text-center">{error}</p>} */}
-
         <form onSubmit={handleSubmit}>
           {/* Dynamic Input Fields */}
           {fields.map((field, index) => (
@@ -38,13 +35,11 @@ const AuthLogin = () => {
               className="mb-4"
             />
           ))}
-
           {/* Remember Me & Forgot Password */}
           <div className="flex justify-between items-center mb-4 text-sm">
             <CheckboxField label="Remember me" name="terms" checked={isChecked} onChange={handleCheckboxChange} />
             <a href="#" className="text-[var(--color-primary)] hover:underline">Forgot password?</a>
           </div>
-
           {/* Submit Button */}
           <Button
             label={isLoading ? "Loading..." : "Submit"}
@@ -54,7 +49,6 @@ const AuthLogin = () => {
             type="submit"
           />
         </form>
-
         <p className="text-[var(--color--primary-text)] mt-4 text-center">
           Don’t have an account? <a href="#" className="text-[var(--color-primary)] font-semibold hover:underline">Sign up</a>
         </p>

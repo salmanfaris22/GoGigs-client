@@ -1,19 +1,12 @@
 import axios from 'axios';
 import { API_URL } from '../config';
 
-
-
-
-
 const api = axios.create({
     baseURL: API_URL,
 });
-
 api.interceptors.request.use(
     (config) => {
         const token = localStorage.getItem("token")
-
-
 
         if (token) {
             config.headers['Authorization'] = `Bearer ${token}`;
@@ -39,15 +32,8 @@ api.interceptors.response.use(
                     break;
                 case 401:
                     console.error('Unauthorized: Please log in to continue.');
-                    // store.dispatch(clearUserAndToken())
-                    // store.dispatch(
-                    //     showToast({
-                    //         message: 'Please log in to continue',
-                    //         type: 'error',
-                    //         timeout: 5000,
-                    //     })
-                    // );
-                    // window.location.replace('/login');
+               
+                    window.location.replace('/auth');
                     break;
                 case 500:
                     console.error('Internal Server Error');

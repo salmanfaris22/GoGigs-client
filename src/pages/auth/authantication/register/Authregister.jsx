@@ -2,9 +2,7 @@ import React from 'react'
 
 const Authregister = () => {
   return (
-    <div>
-      'defrf'
-    </div>
+    <div>sdfsdfsdfsdfsdf</div>
   )
 }
 

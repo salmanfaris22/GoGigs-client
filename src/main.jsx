@@ -9,13 +9,13 @@ import "react-toastify/dist/ReactToastify.css";
 const queryClient = new QueryClient();
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-  <QueryClientProvider client={queryClient}>
-
-  <ToastContainer position="top-right" autoClose={3000} />
-
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <QueryClientProvider client={queryClient}>
+      <ToastContainer position="top-right" autoClose={3000} />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </QueryClientProvider>
   </StrictMode>
 );
+
+

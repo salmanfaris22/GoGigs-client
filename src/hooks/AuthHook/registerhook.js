@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import { register } from "../../services/auth";
 import { setTempData } from "../../utils/temp";
 
-const useAuthRegister = () => {
+const useRegisterHook = () => {
 const navigate = useNavigate();
   // State for form fields
   const [fields, setFields] = useState([
@@ -96,4 +96,4 @@ const navigate = useNavigate();
   };
 };
 
-export default useAuthRegister;
+export default useRegisterHook;

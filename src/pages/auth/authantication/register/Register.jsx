@@ -1,7 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import useAuthRegister from "../../../../hooks/AuthHook/registerHook";
+import useRegisterHook from "../../../../hooks/AuthHook/registerHook";
 
+// import useAuthLogin from "../../../../hooks/AuthHook/LoginHook";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ const Register = () => {
     handleCheckboxChange,
     handleSubmit,
     isLoading,
-  } = useAuthRegister();
+  } = useRegisterHook();
 
   const navigateToLogin = () => {
     navigate("/auth/login"); // Navigate to Login page

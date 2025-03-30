@@ -4,8 +4,9 @@ import Button from "../../../../common/Components/button/Button";
 import CheckboxField from "../../../../common/Components/input/Checkbox";
 
 import SectionHeader from "../common/SectionHeader";
-import useAuthRegister from "../../../../hooks/AuthHook/registerHook";
+
 import { useNavigate } from "react-router-dom";
+import useAuthRegister from "../../../../hooks/AuthHook/registerHook";
 
 const Register = () => {
   const navigate = useNavigate();

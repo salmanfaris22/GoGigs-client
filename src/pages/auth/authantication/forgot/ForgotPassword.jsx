@@ -4,6 +4,7 @@ import InputField from "../../../../common/Components/input/Input";
 
 import SectionHeader from "../common/SectionHeader";
 import useAuthForgotPassword from "../../../../hooks/AuthHook/forgottHook";
+import AnimatedComponent from "../../../../common/UI/Animation/MotionAnimation";
 
 const AuthForgotPassword = () => {
   const [email, setEmail] = useState("");
@@ -16,6 +17,7 @@ const AuthForgotPassword = () => {
 
   return (
     <div className="flex w-full h-screen justify-center items-center px-4">
+        <AnimatedComponent animationType="slideUp" className={"w-full flex justify-center items-center" }>
       <div className="w-full md:w-1/2 flex flex-col">
         <SectionHeader title={"GoGigs"} subtitle={"Forgot your password?"} description={"Enter your email to receive OTP"} />
         <form onSubmit={(e) => handleSendOtp(e, email)}>
@@ -41,6 +43,7 @@ const AuthForgotPassword = () => {
           Remembered your password? <a href="/login" className="text-[var(--color-primary)] font-semibold hover:underline">Login</a>
         </p>
       </div>
+      </AnimatedComponent>
     </div>
   );
 };

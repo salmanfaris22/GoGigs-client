@@ -5,6 +5,7 @@ import SectionHeader from "../common/SectionHeader";
 import InputField from "../../../../common/Components/input/Input";
 import CheckboxField from "../../../../common/Components/input/Checkbox";
 import Button from "../../../../common/Components/button/Button";
+import AnimatedComponent from "../../../../common/UI/Animation/MotionAnimation";
 
 
 // import useAuthLogin from "../../../../hooks/AuthHook/LoginHook";
@@ -26,6 +27,9 @@ const Register = () => {
 
     return (
         <div className="flex w-full h-screen justify-center items-center px-4">
+<AnimatedComponent animationType="slideUp" className={"w-full flex justify-center items-center" }>
+
+
 
             <div className="w-full md:w-1/2 flex flex-col">
                 <SectionHeader
@@ -33,9 +37,9 @@ const Register = () => {
                     subtitle="Join us today!"
                     description="Create a new account"
                 />
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className="grid grid-cols-2 gap-2">
                     {/* Dynamic Input Fields */}
-                    {fields.map((field, index) => (
+                    {fields.slice(0, 2).map((field, index) => (
                         <InputField
                             key={field.name}
                             label={field.label}
@@ -44,6 +48,29 @@ const Register = () => {
                             value={field.value}
                             onChange={(e) => handleInputChange(index, e)}
                             className="mb-4"
+                        />
+                    ))}
+                    {fields.slice(2,3).map((field, index) => (
+                        <InputField
+                            key={field.name}
+                            label={field.label}
+                            name={field.name}
+                            type={field.type}
+                            value={field.value}
+                            onChange={(e) => handleInputChange(index + 2, e)}
+                            className="mb-4 col-span-2"
+                        />
+                    ))}
+                    {/* Remaining Input Fields */}
+                    {fields.slice(3).map((field, index) => (
+                        <InputField
+                            key={field.name}
+                            label={field.label}
+                            name={field.name}
+                            type={field.type}
+                            value={field.value}
+                            onChange={(e) => handleInputChange(index + 3, e)}
+                            className="mb-4 col-span-2"
                         />
                     ))}
 
@@ -78,6 +105,7 @@ const Register = () => {
                     </span>
                 </p>
             </div>
+            </AnimatedComponent>
         </div>
     );
 };

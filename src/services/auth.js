@@ -35,6 +35,9 @@ export const resentOTP = async ({email,meth}) => {
         if(meth=="reset-password"){
                 meth="reset_password"
         }
+        if(meth=="email-verification"){
+                meth="email_verification"
+        }
         const response = await api.post(`/sent-otp?meth=${meth}`, {"email":email}, { withCredentials: true });
         return response.data;
 };

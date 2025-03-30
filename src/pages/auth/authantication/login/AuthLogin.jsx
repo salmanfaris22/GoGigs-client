@@ -5,6 +5,7 @@ import Button from "../../../../common/Components/button/Button";
 import CheckboxField from "../../../../common/Components/input/Checkbox";
 import useAuthLogin from "../../../../hooks/AuthHook/LoginHook";
 import SectionHeader from "../common/SectionHeader";
+import AnimatedComponent from "../../../../common/UI/Animation/MotionAnimation";
 
 const AuthLogin = () => {
   const navigate = useNavigate(); // Initialize useNavigate
@@ -30,6 +31,7 @@ const AuthLogin = () => {
 
   return (
     <div className="flex w-full h-screen justify-center items-center px-4">
+    <AnimatedComponent animationType="slideUp" className={"w-full flex justify-center items-center" }>
       <div className="w-full md:w-1/2 flex flex-col ">
         <SectionHeader title={"GoGigs"} subtitle={" We missed you!"} description={"Login to your account"} />
         <form onSubmit={handleSubmit}>
@@ -73,6 +75,7 @@ const AuthLogin = () => {
           </button>
         </p>
       </div>
+      </AnimatedComponent>
     </div>
   );
 };

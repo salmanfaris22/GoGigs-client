@@ -17,6 +17,7 @@ const navigate = useNavigate();
     // { name: "confirmPassword", label: "Confirm Password", type: "password", value: "" },
   ]);
   // Checkbox state
+  const [getMail,setMail]=useState("")
   const [isChecked, setIsChecked] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   // React Query mutation for registration
@@ -27,7 +28,7 @@ const navigate = useNavigate();
     toast.success(data?.data?.message);
     toast.success(data?.data?.message2);
     setTempData("tempToken",data?.data?.token)
-      navigate("/auth/verify-otp");
+      navigate(`/auth/verify-otp/email_verification/${getMail}`);
       setIsLoading(false)
     },
     onError: (error) => {
@@ -80,7 +81,7 @@ const navigate = useNavigate();
       setIsLoading(false)
       return;
     }
-    
+    setMail(formData.email)
     mutate(formData);
 
   };

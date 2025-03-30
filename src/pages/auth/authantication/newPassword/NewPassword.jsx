@@ -1,5 +1,6 @@
 import React from "react";
 import useResetPassword from "../../../../hooks/AuthHook/newpassHook";
+import AnimatedComponent from "../../../../common/UI/Animation/MotionAnimation";
 
 
 const NewPassword = () => {
@@ -7,6 +8,7 @@ const NewPassword = () => {
 
   return (
     <div className="flex w-full h-screen justify-center items-center px-4">
+       <AnimatedComponent animationType="slideUp" className={"w-full flex justify-center items-center" }>
       <div className="w-full md:w-1/2 flex flex-col">
         <h2 className="text-3xl mb-4">Reset Password</h2>
         <form onSubmit={handleSubmit}>
@@ -37,6 +39,7 @@ const NewPassword = () => {
           </button>
         </form>
       </div>
+      </AnimatedComponent>
     </div>
   );
 };

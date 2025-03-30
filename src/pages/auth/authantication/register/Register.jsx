@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import useRegisterHook from "../../../../hooks/AuthHook/registerHook";
+import useRegisterHook from "../../../../hooks/AuthHook/authregisterHook";
+
 
 // import useAuthLogin from "../../../../hooks/AuthHook/LoginHook";
 

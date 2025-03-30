@@ -7,14 +7,12 @@ const AuthLayout = () => {
   return (
     <div>
       <div className="absolute right-0 top-0">
-       <SectionTop/>
+        <SectionTop />
       </div>
       <div className="flex justify-center items-center h-screen  w-full ">
         <div className="w-full  bg-[var(--color-white)]  rounded-xl  grid grid-cols-2  items-center   ">
-
           {/* Image Section (Hidden on Mobile) */}
-         
-<SectionImage/>
+          <SectionImage />
           {/* Login Form Section */}
           <Outlet />
         </div>

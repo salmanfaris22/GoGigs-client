@@ -32,7 +32,6 @@ api.interceptors.response.use(
                     break;
                 case 401:
                     console.error('Unauthorized: Please log in to continue.');
-               
                     window.location.replace('/auth');
                     break;
                 case 500:

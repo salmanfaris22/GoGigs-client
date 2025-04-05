@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 
 import { NavbarDemo } from "./common/Layout/Navbar/Navbar";
 // import Hero from "./pages/NonAuth/Landing/Hero/Hero.Jsx";
+// import Hero from "./pages/NonAuth/Landing/Hero/Hero.Jsx";
 // import Contact from "./pages/NonAuth/Contact/Jontact";
 
 
@@ -17,7 +18,7 @@ const Register = lazy(() => import("./pages/auth/authantication/register/Registe
 const VerifyOTP = lazy(() => import("./pages/auth/authantication/verifyOTP/verifyOTP"));
 const AuthForgotPassword = lazy(() => import("./pages/auth/authantication/forgot/ForgotPassword"));
 const NewPassword = lazy(() => import("./pages/auth/authantication/newPassword/NewPassword"));
-const Hero = lazy(() => import("./pages/NonAuth/Landing/Hero/Hero.Jsx"));
+const Hero = lazy(() => import("./pages/NonAuth/Landing/Hero/Hero"));
 
 const Loading = () => (
   <div className="flex items-center justify-center h-screen text-xl">

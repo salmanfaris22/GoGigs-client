@@ -3,7 +3,8 @@ import { Route, Routes } from "react-router-dom";
 // const Hero = lazy(() => import("./pages/NonAuth/Hero/HeroPage.jsx"));
 
 import { NavbarDemo } from "./common/Layout/Navbar/Navbar";
-import HeroPage from "./pages/NonAuth/Hero/HeroPage";
+import Hero from "./pages/NonAuth/Home/MainHero";
+
 
 
 // Lazy-loaded components
@@ -29,7 +30,7 @@ const UserRout = () => {
       <Routes>
 
         {/* <Route path="/" element={<Hero />} /> */}
-        <Route path="/" element={<HeroPage />} />
+        <Route path="/" element={<Hero />} />
         <Route path="/auth" element={<AuthLayout />}>
           <Route path="login" element={<AuthLogin />} />
           <Route path="register" element={<Register />} />

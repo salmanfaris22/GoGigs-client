@@ -5,7 +5,7 @@ import React from 'react'
 // import HeroBottontext from '../../../common/UI/Hero text/HeroBottontext'
 // import { NavbarDemo } from '../../../common/Layout/Navbar/Navbar'
 
-const Hero = () => {
+const HeroPage = () => {
   return (
     <div className=' w-[90%] m-auto'>
     {/* <div class="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element.svg')] utils.ts before:bg-no-repeat before:bg-top before:bg-cover before:size-full before:-z-1 before:transform before:-translate-x-1/2">
@@ -30,4 +30,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default HeroPage

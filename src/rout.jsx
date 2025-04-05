@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-const Hero = lazy(() => import("./pages/NonAuth/Hero/HeroPage.jsx"));
+// const Hero = lazy(() => import("./pages/NonAuth/Hero/HeroPage.jsx"));
 
 import { NavbarDemo } from "./common/Layout/Navbar/Navbar";
 
@@ -28,7 +28,7 @@ const UserRout = () => {
       <Routes>
 
         {/* <Route path="/" element={<Hero />} /> */}
-        <Route path="/" element={<Hero />} />
+        {/* <Route path="/" element={<Hero />} /> */}
         <Route path="/auth" element={<AuthLayout />}>
           <Route path="login" element={<AuthLogin />} />
           <Route path="register" element={<Register />} />

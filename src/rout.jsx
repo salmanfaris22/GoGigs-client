@@ -1,8 +1,9 @@
 import React, { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import Hero from "./pages/NonAuth/Hero/Hero";
+const Hero = lazy(() => import("./pages/NonAuth/Hero/Hero.jsx"));
+
 import { NavbarDemo } from "./common/Layout/Navbar/Navbar";
-import Header from "./common/Layout/Header/Header";
+
 
 // Lazy-loaded components
 const AuthLayout = lazy(() => import("./pages/auth/authantication/Auth"));

@@ -1,8 +1,6 @@
 
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-
-import UserRout from './rout'
 // import Hero from './pages/NonAuth/Landing/Hero/Hero'
 import AuthLayout from './pages/auth/authantication/Auth'
 import AuthLogin from './pages/auth/authantication/login/AuthLogin'

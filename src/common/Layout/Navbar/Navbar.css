@@ -1,0 +1,9 @@
+/* Add to your global CSS file if using Tailwind */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  

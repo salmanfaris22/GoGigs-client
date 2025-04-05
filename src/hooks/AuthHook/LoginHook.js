@@ -9,6 +9,7 @@ const useAuthLogin = () => {
   const [fields, setFields] = useState([
     { name: "email", label: "Email", type: "email", value: "" },
     { name: "password", label: "Password", type: "password", value: "" },
+    
   ]);
   const [isChecked, setIsChecked] = useState(false);
   const [isLoading, setIsLoading] = useState(false);

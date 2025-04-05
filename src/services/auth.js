@@ -11,17 +11,12 @@ export const register = async (data) => {
         return response.data;
 };
 
-
-
 export const verifyotp = async ({ otp, token }) => {
         const response = await api.post(`/verify-otp?token=${token}`, {"otp":otp}, { withCredentials: true });
         return response.data;
 };
 
-
-
 export const sendOtp = async ({email,meth}) => {
-
         const response = await api.post(`/sent-otp?meth=${meth}`, {"email":email}, { withCredentials: true });
         return response.data;
 };

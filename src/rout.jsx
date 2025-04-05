@@ -1,5 +1,8 @@
 import React, { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
+import Hero from "./pages/NonAuth/Hero/Hero";
+import { NavbarDemo } from "./common/Layout/Navbar/Navbar";
+import Header from "./common/Layout/Header/Header";
 
 // Lazy-loaded components
 const AuthLayout = lazy(() => import("./pages/auth/authantication/Auth"));
@@ -19,8 +22,12 @@ const Loading = () => (
 const UserRout = () => {
   return (
     <Suspense fallback={<Loading />}>
+    {/* <Header/> */}
+          <NavbarDemo/>
       <Routes>
+
         {/* <Route path="/" element={<Hero />} /> */}
+        <Route path="/" element={<Hero />} />
         <Route path="/auth" element={<AuthLayout />}>
           <Route path="login" element={<AuthLogin />} />
           <Route path="register" element={<Register />} />

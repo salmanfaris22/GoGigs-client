@@ -28,9 +28,6 @@ const Register = () => {
     return (
         <div className="flex w-full h-screen justify-center items-center px-4">
 <AnimatedComponent animationType="slideUp" className={"w-full flex justify-center items-center" }>
-
-
-
             <div className="w-full md:w-1/2 flex flex-col">
                 <SectionHeader
                     title="GoGigs"

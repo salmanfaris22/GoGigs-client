@@ -16,7 +16,9 @@ const navigate = useNavigate();
     { name: "password", label: "Password", type: "password", value: "" },
     // { name: "confirmPassword", label: "Confirm Password", type: "password", value: "" },
   ]);
+
   // Checkbox state
+  
   const [getMail,setMail]=useState("")
   const [isChecked, setIsChecked] = useState(false);
   const [isLoading, setIsLoading] = useState(false);

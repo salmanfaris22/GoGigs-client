@@ -16,9 +16,7 @@ const AuthLayout = () => {
           {/* Image Section (Hidden on Mobile) */}
           <SectionImage />
           {/* Login Form Section */}
-         
           <Outlet />
-  
         </div>
       </div>
       </AnimatedComponent>

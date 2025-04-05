@@ -19,7 +19,7 @@ function App() {
        <NavbarDemo/>
      
 <Routes>
-      {/* <Route path="/" element={<Hero />} /> */}
+      <Route path="/" element={<Hero />} ></Route>
         <Route path="/auth" element={<AuthLayout />}>
           <Route path="login" element={<AuthLogin />} />
           <Route path="register" element={<Register />} />

@@ -30,7 +30,7 @@ const UserRout = () => {
       <Routes>
 
         {/* <Route path="/" element={<Hero />} /> */}
-        <Route path="/" element={<Hero />} />
+        <Route path="" element={<Hero />} />
         <Route path="/auth" element={<AuthLayout />}>
           <Route path="login" element={<AuthLogin />} />
           <Route path="register" element={<Register />} />

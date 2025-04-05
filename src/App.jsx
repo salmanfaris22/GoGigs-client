@@ -9,7 +9,7 @@ import VerifyOTP from './pages/auth/authantication/verifyOTP/verifyOTP'
 import AuthForgotPassword from './pages/auth/authantication/forgot/ForgotPassword'
 import NewPassword from './pages/auth/authantication/newPassword/NewPassword'
 import { NavbarDemo } from './common/Layout/Navbar/Navbar'
-import Hero from './common/UI/Hero/Hero'
+import Hero from './pages/NonAuth/Landing/Hero'
 // import Hero from './pages/NonAuth/Landing/Hero/Hero'
 // import Hero from './pages/NonAuth/Landing/Hero/Hero'
 

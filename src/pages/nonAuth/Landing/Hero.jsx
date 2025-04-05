@@ -1,8 +1,8 @@
 import React from 'react'
-import HeroMainText from '../Hero text/HeroMainText'
-import HeroGradiyentBtn from '../../Components/button/HeroGradiyentBtn'
-import { WobbleCards } from '../../Components/WebbolCard/WebbleCard'
-import HeroBottontext from '../Hero text/HeroBottontext'
+import HeroMainText from '../../../common/UI/Hero text/HeroMainText'
+import HeroGradiyentBtn from '../../../common/Components/button/HeroGradiyentBtn'
+import { WobbleCards } from '../../../common/Components/WebbolCard/WebbleCard'
+import HeroBottontext from '../../../common/UI/Hero text/HeroBottontext'
 
 
 // import { NavbarDemo } from '../../../common/Layout/Navbar/Navbar'

@@ -8,14 +8,14 @@ import HeaderData from "../../Components/header/Header.jsx";
 import { menuItems } from "../../Components/header/demoJson.js";
 import ScrollButton from "../../Components/button/IconButtonScroll.jsx";
 import SideBar from "../../Components/header/SideBar.jsx";
-import Hero from "../../UI/Hero/Hero.jsx";
+// import Hero from "../../UI/Hero/Hero.jsx";
 
 export function NavbarDemo() {
     return (
         <div className="">
             <Header />
             <Navbar className="" />
-            <Hero/>
+            {/* <Hero/> */}
         </div>
     );
 }

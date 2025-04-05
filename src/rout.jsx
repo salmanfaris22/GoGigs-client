@@ -23,7 +23,7 @@ const UserRout = () => {
   return (
     <Suspense fallback={<Loading />}>
     {/* <Header/> */}
-          <NavbarDemo/>
+       <NavbarDemo/>
       <Routes>
 
         {/* <Route path="/" element={<Hero />} /> */}

@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-const Hero = lazy(() => import("./pages/NonAuth/Hero/Hero.jsx"));
+const Hero = lazy(() => import("./pages/NonAuth/Hero/HeroPage.jsx"));
 
 import { NavbarDemo } from "./common/Layout/Navbar/Navbar";
 

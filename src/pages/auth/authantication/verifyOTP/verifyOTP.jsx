@@ -82,8 +82,7 @@ const VerifyOTP = () => {
             type="submit"
           />
           <p className="mt-4 text-center">
-            <button
-              type="button"
+            <button   type="button"
               onClick={handleResendOtp}
               className="text-blue-500 hover:underline"
               disabled={isLoading || timeLeft > 0}

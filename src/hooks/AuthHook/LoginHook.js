@@ -3,6 +3,7 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 import { login } from "../../services/auth";
 import { useNavigate } from "react-router-dom";
+import { setTempData } from "../../utils/temp";
 
 const useAuthLogin = () => {
   const navigate = useNavigate();
@@ -18,9 +19,10 @@ const useAuthLogin = () => {
     mutationFn: login,
     onSuccess: (data) => {
       sessionStorage.setItem("local_token", JSON.stringify(data?.data?.local_token));
+      setTempData("local_token",data?.data?.local_token)
       toast.success("Login successful!");
       setIsLoading(false)
-      navigate("/auth/login")
+      navigate("/")
       // navigate("/"); // Uncomment if you want to navigate after successful login
     },
     onError: (error) => {

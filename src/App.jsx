@@ -10,18 +10,40 @@ import AuthForgotPassword from './pages/auth/authantication/forgot/ForgotPasswor
 import NewPassword from './pages/auth/authantication/newPassword/NewPassword'
 import { NavbarDemo } from './common/Layout/Navbar/Navbar'
 import Hero from './pages/Landing/Hero'
+import Makefreelancer from './pages/auth/makefreelancer/Makefreelancer'
+import Freelncer from './pages/auth/makefreelancer/freelncer/Freelncer'
+import Skills from './pages/auth/makefreelancer/skills/Skills'
+
+import Education from './pages/auth/makefreelancer/education/Educaion'
+
+
+
 // import Hero from './pages/NonAuth/Landing/Hero/Hero'
 // import Hero from './pages/NonAuth/Landing/Hero/Hero'
 
 
 function App() {
-  
+
   return (
     <div>
-       <NavbarDemo/>
-     
-<Routes>
-      <Route path="/" element={<Hero />} ></Route>
+      {/* <NavbarDemo/>   */}
+      <Routes>
+        <Route path="/freelancer" element={<Makefreelancer />}>
+        <Route index element={<Freelncer />} />
+        <Route path="skills" element={<Skills />} />
+        <Route path="education" element={<Education />} />
+        
+        
+        </Route>
+      </Routes>
+      {/* <NavbarDemo/>   */}
+      <Routes>
+        <Route path="/" element={<NavbarDemo />} ></Route>
+      </Routes>
+      <Routes>
+
+        <Route path="/" element={<Hero />} ></Route>
+
         <Route path="/auth" element={<AuthLayout />}>
           <Route path="login" element={<AuthLogin />} />
           <Route path="register" element={<Register />} />
@@ -30,7 +52,7 @@ function App() {
           <Route path="new-password" element={<NewPassword />} />
         </Route>
       </Routes>
-    
+
 
     </div>
   )

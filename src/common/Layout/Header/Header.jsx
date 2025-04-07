@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import SearchInput from '../../Components/input/SearchInput'
 
 import { CheckLogged } from '../../../utils/checkLogged';
@@ -7,11 +7,11 @@ import MainLogo from './RigthSide';
 
 const Header = () => {
     const [searchTerm, setSearchTerm] = useState("");
-    const [logged, setLogged] = useState(false);
+    // const [logged, setLogged] = useState(false);
 
-    useEffect(() => {
-        setLogged(CheckLogged());
-    }, []);
+    // useEffect(() => {
+    //     setLogged(CheckLogged());
+    // }, []);
 
     return (
         <header className="flex justify-center p-2 w-full h-[80px] items-center bg-white ">
@@ -28,11 +28,10 @@ const Header = () => {
                         />
                     </div>
                     {/* Icons or User Actions */}
-                    {logged ? (
-                        <div className="text-sm md:text-base">Welcome Back</div>
-                    ) : (
+                  
+                    
                         <RightSide />
-                    )}
+                    
                 </div>
             </div>
         </header>

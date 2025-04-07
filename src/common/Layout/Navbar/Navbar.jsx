@@ -73,7 +73,7 @@ export default function Navbar() {
                             <FaTimes size={20} />
                         </button>
                     </div>
-                  <SideBar  menuItems={menuItems} setActiveIndex={setActiveIndex} activeIndex={activeIndex}/>
+                  {/* <SideBar  menuItems={menuItems} setActiveIndex={setActiveIndex} activeIndex={activeIndex}/> */}
                 </div>
             </nav>
         </div>

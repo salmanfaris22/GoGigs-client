@@ -17,32 +17,32 @@ const AuthForgotPassword = () => {
 
   return (
     <div className="flex w-full h-screen justify-center items-center px-4">
-        <AnimatedComponent animationType="slideUp" className={"w-full flex justify-center items-center" }>
-      <div className="w-full md:w-1/2 flex flex-col">
-        <SectionHeader title={"GoGigs"} subtitle={"Forgot your password?"} description={"Enter your email to receive OTP"} />
-        <form onSubmit={(e) => handleSendOtp(e, email)}>
-          {/* Email Input Field */}
-          <InputField
-            label="Email"
-            name="email"
-            type="email"
-            value={email}
-            onChange={handleInputChange}
-            className="mb-4"
-          />
-          {/* Submit Button */}
-          <Button
-            label={isLoading ? "Sending OTP..." : "Send OTP"}
-            variant="primary"
-            className="mt-4 w-full"
-            disabled={isLoading}
-            type="submit"
-          />
-        </form>
-        <p className="text-[var(--color--primary-text)] mt-4 text-center">
-          Remembered your password? <a href="/login" className="text-[var(--color-primary)] font-semibold hover:underline">Login</a>
-        </p>
-      </div>
+      <AnimatedComponent animationType="slideUp" className={"w-full flex justify-center items-center"}>
+        <div className="w-full md:w-1/2 flex flex-col">
+          <SectionHeader title={"GoGigs"} subtitle={"Forgot your password?"} description={"Enter your email to receive OTP"} />
+          <form onSubmit={(e) => handleSendOtp(e, email)}>
+            {/* Email Input Field */}
+            <InputField
+              label="Email"
+              name="email"
+              type="email"
+              value={email}
+              onChange={handleInputChange}
+              className="mb-4"
+            />
+            {/* Submit Button */}
+            <Button
+              label={isLoading ? "Sending OTP..." : "Send OTP"}
+              variant="primary"
+              className="mt-4 w-full"
+              disabled={isLoading}
+              type="submit"
+            />
+          </form>
+          <p className="text-[var(--color--primary-text)] mt-4 text-center">
+            Remembered your password? <a href="/login" className="text-[var(--color-primary)] font-semibold hover:underline">Login</a>
+          </p>
+        </div>
       </AnimatedComponent>
     </div>
   );
